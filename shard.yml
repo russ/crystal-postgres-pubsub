@@ -1,0 +1,14 @@
+name: postgres-pubsub
+version: 0.1.0
+
+targets:
+  server:
+    main: src/server.cr
+  worker:
+    main: src/worker.cr
+
+dependencies:
+  pg:
+    github: will/crystal-pg 
+  kemal:
+    github: kemalcr/kemal
